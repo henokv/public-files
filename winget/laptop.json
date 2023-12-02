@@ -59,6 +59,15 @@
 				},
 				{
 					"PackageIdentifier" : "OpenJS.NodeJS.LTS"
+				},
+				{
+					"PackageIdentifier" : "Git.Git"
+				},
+				{
+					"PackageIdentifier" : "GitHub.cli"
+				},
+				{
+					"PackageIdentifier" : "GitHub.GitHubDesktop"
 				}
 			],
 			"SourceDetails" : 
