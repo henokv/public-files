@@ -10,9 +10,6 @@
 					"PackageIdentifier" : "Helm.Helm"
 				},
 				{
-					"PackageIdentifier" : "JetBrains.RustRover"
-				},
-				{
 					"PackageIdentifier" : "Kubernetes.kubectl"
 				},
 				{
