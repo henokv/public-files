@@ -12,14 +12,8 @@
 				{
 					"PackageIdentifier" : "Kubernetes.kubectl"
 				},
-				{
-					"PackageIdentifier" : "LibreWolf.LibreWolf"
-				},
                 {
 					"PackageIdentifier" : "argoproj.argocd"
-				},				
-				{
-					"PackageIdentifier" : "Microsoft.Edge"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.Azure.Kubelogin"
@@ -28,37 +22,10 @@
 					"PackageIdentifier" : "Microsoft.WindowsTerminal"
 				},
 				{
-					"PackageIdentifier" : "Notepad++.Notepad++"
-				},
-				{
-					"PackageIdentifier" : "JetBrains.Toolbox"
-				},
-				{
-					"PackageIdentifier" : "MuhammedKalkan.OpenLens"
-				},
-				{
-					"PackageIdentifier" : "AgileBits.1Password"
-				},
-				{
-					"PackageIdentifier" : "NordSecurity.NordVPN"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VisualStudioCode"
-				},
-				{
-					"PackageIdentifier" : "GoLang.Go"
-				},
-				{
-					"PackageIdentifier" : "VideoLAN.VLC"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.PowerShell"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.AzureCLI"
-				},
-				{
-					"PackageIdentifier" : "OpenJS.NodeJS.LTS"
 				}
 			],
 			"SourceDetails" : 
