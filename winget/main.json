@@ -68,6 +68,9 @@
 				},
 				{
 					"PackageIdentifier" : "GitHub.GitHubDesktop"
+				},
+				{
+					"PackageIdentifier" : "Postman.Postman"
 				}
 			],
 			"SourceDetails" : 
