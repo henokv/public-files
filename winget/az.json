@@ -26,6 +26,9 @@
 				},
 				{
 					"PackageIdentifier" : "Microsoft.AzureCLI"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.SDK.8"
 				}
 			],
 			"SourceDetails" : 

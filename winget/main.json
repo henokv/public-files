@@ -71,6 +71,9 @@
 				},
 				{
 					"PackageIdentifier" : "Postman.Postman"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.SDK.8"
 				}
 			],
 			"SourceDetails" : 
