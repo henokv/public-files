@@ -15,6 +15,9 @@
 				{
 					"PackageIdentifier" : "LibreWolf.LibreWolf"
 				},
+				{
+					"PackageIdentifier" : "Mozilla.Firefox"
+				},
                 {
 					"PackageIdentifier" : "argoproj.argocd"
 				},				
