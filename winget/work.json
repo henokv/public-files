@@ -37,16 +37,10 @@
 					"PackageIdentifier" : "AgileBits.1Password"
 				},
 				{
-					"PackageIdentifier" : "NordSecurity.NordVPN"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.VisualStudioCode"
 				},
 				{
 					"PackageIdentifier" : "GoLang.Go"
-				},
-				{
-					"PackageIdentifier" : "VideoLAN.VLC"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.PowerShell"
