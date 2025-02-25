@@ -80,6 +80,12 @@
 				},
 				{
 					"PackageIdentifier" : "Microsoft.DotNet.SDK.9"
+				},
+				{
+					"PackageIdentifier" : "Hashicorp.Terraform"
+				},
+				{
+					"PackageIdentifier" : "OpenTofu.Tofu"
 				}
 			],
 			"SourceDetails" : 
