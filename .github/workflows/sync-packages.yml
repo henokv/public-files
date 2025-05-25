@@ -3,8 +3,8 @@ name: Sync Winget Packages
 on:
   pull_request:
     branches: [ master ]
-    paths:
-      - 'winget/**'
+#    paths:
+#      - 'winget/**'
 
 jobs:
   sync-packages:
