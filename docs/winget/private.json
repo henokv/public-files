@@ -77,16 +77,10 @@
                     "PackageIdentifier": "Microsoft.DotNet.SDK.9"
                 },
                 {
-                    "PackageIdentifier": "Microsoft.Edge"
-                },
-                {
                     "PackageIdentifier": "Microsoft.PowerShell"
                 },
                 {
                     "PackageIdentifier": "Microsoft.VisualStudioCode"
-                },
-                {
-                    "PackageIdentifier": "Microsoft.WSL"
                 },
                 {
                     "PackageIdentifier": "Microsoft.WindowsTerminal"
