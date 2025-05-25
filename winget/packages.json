@@ -1,0 +1,287 @@
+[
+    {
+        "package": "AgileBits.1Password",
+        "inList": [
+            "private",
+            "work"
+        ]
+    },
+    {
+        "package": "AgileBits.1Password.CLI",
+        "inList": [
+            "private",
+            "work"
+        ]
+    },
+    {
+        "package": "Coder.Coder",
+        "inList": ["private", "work"]
+    },
+    {
+        "package": "Git.Git",
+        "inList": [
+            "private",
+            "work"
+        ]
+    },
+    {
+        "package": "GitHub.GitHubDesktop",
+        "inList": [
+            "private",
+            "work"
+        ]
+    },
+    {
+        "package": "GitHub.cli",
+        "inList": [
+            "private",
+            "work"
+        ]
+    },
+    {
+        "package": "GnuPG.GnuPG",
+        "inList": ["private"]
+    },
+    {
+        "package": "GnuPG.Gpg4win",
+        "inList": ["private"]
+    },
+    {
+        "package": "GoLang.Go",
+        "inList": [
+            "private",
+            "work"
+        ]
+    },
+    {
+        "package": "Hashicorp.Packer",
+        "inList": ["private"]
+    },
+    {
+        "package": "Hashicorp.Terraform",
+        "inList": [
+            "private",
+            "work",
+            "az"
+        ]
+    },
+    {
+        "package": "Hashicorp.Vault",
+        "inList": ["private"]
+    },
+    {
+        "package": "Helm.Helm",
+        "inList": [
+            "private",
+            "work",
+            "az"
+        ]
+    },
+    {
+        "package": "HetznerCloud.CLI",
+        "inList": ["private"]
+    },
+    {
+        "package": "JetBrains.Toolbox",
+        "inList": [
+            "private",
+            "work"
+        ]
+    },
+    {
+        "package": "KeePassXCTeam.KeePassXC",
+        "inList": ["private"]
+    },
+    {
+        "package": "Kubernetes.clusterctl",
+        "inList": ["private"]
+    },
+    {
+        "package": "Kubernetes.kubectl",
+        "inList": [
+            "private",
+            "work",
+            "az"
+        ]
+    },
+    {
+        "package": "Kubernetes.kustomize",
+        "inList": ["private", "work", "az"]
+    },
+    {
+        "package": "LibreWolf.LibreWolf",
+        "inList": [
+            "private"
+        ]
+    },
+    {
+        "package": "Microsoft.Azure.Kubelogin",
+        "inList": [
+            "private",
+            "work",
+            "az"
+        ]
+    },
+    {
+        "package": "Microsoft.AzureCLI",
+        "inList": [
+            "private",
+            "work",
+            "az"
+        ]
+    },
+    {
+        "package": "Microsoft.DotNet.SDK.8",
+        "inList": [
+            "private",
+            "work",
+            "az"
+        ]
+    },
+    {
+        "package": "Microsoft.DotNet.SDK.9",
+        "inList": [
+            "private",
+            "work",
+            "az"
+        ]
+    },
+    {
+        "package": "Microsoft.Edge",
+        "inList": [
+            "work",
+            "az"
+        ]
+    },
+    {
+        "package": "Microsoft.PowerShell",
+        "inList": [
+            "private",
+            "work",
+            "az"
+        ]
+    },
+    {
+        "package": "Microsoft.VisualStudioCode",
+        "inList": [
+            "private",
+            "work",
+            "az"
+        ]
+    },
+    {
+        "package": "Microsoft.WindowsTerminal",
+        "inList": [
+            "private",
+            "work",
+            "az"
+        ]
+    },
+    {
+        "package": "Microsoft.WSL",
+        "inList": []
+    },
+    {
+        "package": "Mozilla.Firefox.en-GB",
+        "inList": ["private", "work"]
+    },
+    {
+        "package": "Mozilla.Thunderbird.en-GB",
+        "inList": ["private"]
+    },
+    {
+        "package": "MuhammedKalkan.OpenLens",
+        "inList": [
+            "private"
+        ]
+    },
+    {
+        "package": "MullvadVPN.MullvadVPN",
+        "inList": [
+            "private"
+        ]
+    },
+    {
+        "package": "Notepad++.Notepad++",
+        "inList": [
+            "private",
+            "work"
+        ]
+    },
+    {
+        "package": "OpenJS.NodeJS.LTS",
+        "inList": [
+            "private",
+            "work"
+        ]
+    },
+    {
+        "package": "OpenTofu.Tofu",
+        "inList": [
+            "private",
+            "work",
+            "az"
+        ]
+    },
+    {
+        "package": "Postman.Postman",
+        "inList": [
+            "private",
+            "work"
+        ]
+    },
+    {
+        "package": "Proton.ProtonDrive",
+        "inList": ["private"]
+    },
+    {
+        "package": "Proton.ProtonMail",
+        "inList": ["private"]
+    },
+    {
+        "package": "Proton.ProtonMailBridge",
+        "inList": ["private"]
+    },
+    {
+        "package": "Proton.ProtonVPN",
+        "inList": ["private"]
+    },
+    {
+        "package": "Pulumi.Pulumi",
+        "inList": ["private"]
+    },
+    {
+        "package": "RaspberryPiFoundation.RaspberryPiImager",
+        "inList": ["private"]
+    },
+    {
+        "package": "Sidero.talosctl",
+        "inList": ["private"]
+    },
+    {
+        "package": "Tailscale.Tailscale",
+        "inList": ["private"]
+    },
+    {
+        "package": "VideoLAN.VLC",
+        "inList": [
+            "private"
+        ]
+    },
+    {
+        "package": "Yubico.YubikeyManager",
+        "inList": ["private"]
+    },
+    {
+        "package": "argoproj.argocd",
+        "inList": [
+            "private",
+            "work",
+            "az"
+        ]
+    },
+    {
+        "package": "calibre.calibre",
+        "inList": ["private"]
+    }
+]
