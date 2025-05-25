@@ -19,8 +19,9 @@ jobs:
           python-version: '3.x'
 
       - name: Run sync_packages.py
+        working-directory: winget
         run: |
-          python3 winget/sync_packages.py
+          python3 sync_packages.py
 
       - name: Commit changes
         run: |
