@@ -1,0 +1,62 @@
+{
+    "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+    "CreationDate": "2025-05-25T21:09:16.721-00:00",
+    "Sources": [
+        {
+            "Packages": [
+                {
+                    "PackageIdentifier": "Git.Git"
+                },
+                {
+                    "PackageIdentifier": "Hashicorp.Terraform"
+                },
+                {
+                    "PackageIdentifier": "Helm.Helm"
+                },
+                {
+                    "PackageIdentifier": "Kubernetes.kubectl"
+                },
+                {
+                    "PackageIdentifier": "Kubernetes.kustomize"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.Azure.Kubelogin"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.AzureCLI"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.DotNet.SDK.8"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.DotNet.SDK.9"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.Edge"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.PowerShell"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.VisualStudioCode"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.WindowsTerminal"
+                },
+                {
+                    "PackageIdentifier": "OpenTofu.Tofu"
+                },
+                {
+                    "PackageIdentifier": "argoproj.argocd"
+                }
+            ],
+            "SourceDetails": {
+                "Argument": "https://cdn.winget.microsoft.com/cache",
+                "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+                "Name": "winget",
+                "Type": "Microsoft.PreIndexed.Package"
+            }
+        }
+    ],
+    "WinGetVersion": "1.10.390"
+}
