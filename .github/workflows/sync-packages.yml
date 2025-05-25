@@ -31,3 +31,15 @@ jobs:
             git commit -m "chore: auto-sync winget package files"
             git push origin HEAD:${{ github.head_ref }}
           fi
+
+      - name: Comment on PR with updated files
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          UPDATED_FILES=$(git diff --name-only HEAD^ HEAD | grep '^docs/winget/' || true)
+          if [ -n "$UPDATED_FILES" ]; then
+            MSG="The following files were updated by the sync workflow:\n\n\`\`\`\n$UPDATED_FILES\n\`\`\`"
+            PR_NUMBER=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
+            gh pr comment "$PR_NUMBER" --body "$MSG"
+          fi
