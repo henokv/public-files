@@ -52,9 +52,7 @@ jobs:
             if (updatedFiles.length > 0) {
               const msg = [
                 "The following files were updated by the sync workflow:\n",
-                "```\n",
-                ...updatedFiles.map(f => `- ${f}`),
-                "\n```"
+                ...updatedFiles.map(f => `- ${f}\n`),
               ].join('');
               const prNumber = context.payload.pull_request.number;
               github.rest.issues.createComment({
