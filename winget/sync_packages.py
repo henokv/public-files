@@ -1,6 +1,16 @@
 import json
 import os
+import glob
 from datetime import datetime, timezone
+
+# Delete all JSON files in ../docs/winget before generating new ones
+def clean_docs_winget():
+    docs_dir = os.path.join(os.path.dirname(__file__), "../docs/winget")
+    for f in glob.glob(os.path.join(docs_dir, "*.json")):
+        try:
+            os.remove(f)
+        except Exception:
+            pass
 
 def load_package_list():
     with open(os.path.join(os.path.dirname(__file__), "packages.json"), "r", encoding="utf-8") as f:
@@ -61,6 +71,7 @@ def update_packages_json(filename, packages):
     save_json(filename, data)
 
 def main():
+    clean_docs_winget()
     package_list = load_package_list()
     sets = build_package_sets(package_list)
     for key, filename in file_map.items():

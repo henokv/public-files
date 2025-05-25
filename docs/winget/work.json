@@ -1,0 +1,95 @@
+{
+    "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+    "CreationDate": "2025-05-25T21:29:37.760-00:00",
+    "Sources": [
+        {
+            "Packages": [
+                {
+                    "PackageIdentifier": "AgileBits.1Password"
+                },
+                {
+                    "PackageIdentifier": "AgileBits.1Password.CLI"
+                },
+                {
+                    "PackageIdentifier": "Coder.Coder"
+                },
+                {
+                    "PackageIdentifier": "Git.Git"
+                },
+                {
+                    "PackageIdentifier": "GitHub.GitHubDesktop"
+                },
+                {
+                    "PackageIdentifier": "GitHub.cli"
+                },
+                {
+                    "PackageIdentifier": "GoLang.Go"
+                },
+                {
+                    "PackageIdentifier": "Hashicorp.Terraform"
+                },
+                {
+                    "PackageIdentifier": "Helm.Helm"
+                },
+                {
+                    "PackageIdentifier": "JetBrains.Toolbox"
+                },
+                {
+                    "PackageIdentifier": "Kubernetes.kubectl"
+                },
+                {
+                    "PackageIdentifier": "Kubernetes.kustomize"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.Azure.Kubelogin"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.AzureCLI"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.DotNet.SDK.8"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.DotNet.SDK.9"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.Edge"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.PowerShell"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.VisualStudioCode"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.WindowsTerminal"
+                },
+                {
+                    "PackageIdentifier": "Mozilla.Firefox.en-GB"
+                },
+                {
+                    "PackageIdentifier": "Notepad++.Notepad++"
+                },
+                {
+                    "PackageIdentifier": "OpenJS.NodeJS.LTS"
+                },
+                {
+                    "PackageIdentifier": "OpenTofu.Tofu"
+                },
+                {
+                    "PackageIdentifier": "Postman.Postman"
+                },
+                {
+                    "PackageIdentifier": "argoproj.argocd"
+                }
+            ],
+            "SourceDetails": {
+                "Argument": "https://cdn.winget.microsoft.com/cache",
+                "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+                "Name": "winget",
+                "Type": "Microsoft.PreIndexed.Package"
+            }
+        }
+    ],
+    "WinGetVersion": "1.10.390"
+}

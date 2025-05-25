@@ -26,16 +26,7 @@ jobs:
         run: |
           python3 sync_packages.py
 
-      - name: Check for updated files
-        id: updated_files
-        run: |
-          UPDATED_FILES=$(git diff --name-only | grep '^docs/winget/' || true)
-          echo "updated_files<<EOF" >> $GITHUB_OUTPUT
-          echo "$UPDATED_FILES" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-
       - name: Commit and push changes
-        if: steps.updated_files.outputs.updated_files != ''
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: auto-sync winget package files"
@@ -43,16 +34,23 @@ jobs:
           file_pattern: 'docs/winget/*.json'
 
       - name: Comment on PR with updated files
-        if: steps.updated_files.outputs.updated_files != ''
+        if: always()
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const updatedFiles = `${{ steps.updated_files.outputs.updated_files }}`.split('\n').filter(f => f.trim() !== '');
-            if (updatedFiles.length > 0) {
+            const execSync = require('child_process').execSync;
+            let updatedFiles = '';
+            try {
+              updatedFiles = execSync('git diff --name-only HEAD~1 HEAD | grep "^docs/winget/" || true').toString();
+            } catch (e) {
+              updatedFiles = '';
+            }
+            const files = updatedFiles.split('\n').filter(f => f.trim() !== '');
+            if (files.length > 0) {
               const msg = [
                 "The following files were updated by the sync workflow:\n",
-                ...updatedFiles.map(f => `- ${f}\n`),
+                ...files.map(f => `- ${f}\n`),
               ].join('');
               const prNumber = context.payload.pull_request.number;
               github.rest.issues.createComment({

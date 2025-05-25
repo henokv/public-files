@@ -1,0 +1,95 @@
+{
+    "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+    "CreationDate": "2025-05-25T21:29:37.759-00:00",
+    "Sources": [
+        {
+            "Packages": [
+                {
+                    "PackageIdentifier": "Microsoft.DotNet.SDK.9"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.Edge"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.PowerShell"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.VisualStudioCode"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.WSL"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.WindowsTerminal"
+                },
+                {
+                    "PackageIdentifier": "Mozilla.Firefox.en-GB"
+                },
+                {
+                    "PackageIdentifier": "Mozilla.Thunderbird.en-GB"
+                },
+                {
+                    "PackageIdentifier": "MuhammedKalkan.OpenLens"
+                },
+                {
+                    "PackageIdentifier": "MullvadVPN.MullvadVPN"
+                },
+                {
+                    "PackageIdentifier": "Notepad++.Notepad++"
+                },
+                {
+                    "PackageIdentifier": "OpenJS.NodeJS.LTS"
+                },
+                {
+                    "PackageIdentifier": "OpenTofu.Tofu"
+                },
+                {
+                    "PackageIdentifier": "Postman.Postman"
+                },
+                {
+                    "PackageIdentifier": "Proton.ProtonDrive"
+                },
+                {
+                    "PackageIdentifier": "Proton.ProtonMail"
+                },
+                {
+                    "PackageIdentifier": "Proton.ProtonMailBridge"
+                },
+                {
+                    "PackageIdentifier": "Proton.ProtonVPN"
+                },
+                {
+                    "PackageIdentifier": "Pulumi.Pulumi"
+                },
+                {
+                    "PackageIdentifier": "RaspberryPiFoundation.RaspberryPiImager"
+                },
+                {
+                    "PackageIdentifier": "Sidero.talosctl"
+                },
+                {
+                    "PackageIdentifier": "Tailscale.Tailscale"
+                },
+                {
+                    "PackageIdentifier": "VideoLAN.VLC"
+                },
+                {
+                    "PackageIdentifier": "Yubico.YubikeyManager"
+                },
+                {
+                    "PackageIdentifier": "argoproj.argocd"
+                },
+                {
+                    "PackageIdentifier": "calibre.calibre"
+                }
+            ],
+            "SourceDetails": {
+                "Argument": "https://cdn.winget.microsoft.com/cache",
+                "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+                "Name": "winget",
+                "Type": "Microsoft.PreIndexed.Package"
+            }
+        }
+    ],
+    "WinGetVersion": "1.10.390"
+}
