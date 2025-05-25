@@ -7,8 +7,8 @@
         let htmlString = '<ul>';
         
         for (let file of data) {
-            if(file.name != '/index.html' || file.name != '/CNAME'){
-                htmlString += `<li><a href="/${file.path}">${file.name}</a></li>`;   
+            if(file.name != 'index.html' && file.name != 'CNAME'){
+                htmlString += `<li><a href="/${file.path.replace(/^docs\//, '')}">${file.name}</a></li>`;   
             }
         }
 
