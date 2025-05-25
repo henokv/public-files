@@ -9,6 +9,9 @@ on:
 jobs:
   sync-packages:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -19,15 +22,40 @@ jobs:
           python-version: '3.x'
 
       - name: Run sync_packages.py
+        working-directory: winget
         run: |
-          python3 winget/sync_packages.py
+          python3 sync_packages.py
 
-      - name: Commit changes
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/winget/*.json
-          if ! git diff --cached --quiet; then
-            git commit -m "chore: auto-sync winget package files"
-            git push origin HEAD:${{ github.head_ref }}
-          fi
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: auto-sync winget package files"
+          branch: ${{ github.head_ref }}
+          file_pattern: 'docs/winget/*.json'
+
+      - name: Comment on PR with updated files
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const execSync = require('child_process').execSync;
+            let updatedFiles = '';
+            try {
+              updatedFiles = execSync('git diff --name-only HEAD~1 HEAD | grep "^docs/winget/" || true').toString();
+            } catch (e) {
+              updatedFiles = '';
+            }
+            const files = updatedFiles.split('\n').filter(f => f.trim() !== '');
+            if (files.length > 0) {
+              const msg = [
+                "The following files were updated by the sync workflow:\n",
+                ...files.map(f => `- ${f}\n`),
+              ].join('');
+              const prNumber = context.payload.pull_request.number;
+              github.rest.issues.createComment({
+                ...context.repo,
+                issue_number: prNumber,
+                body: msg
+              });
+            }
