@@ -8,6 +8,8 @@ def load_package_list():
 
 file_map = {
     "full": "../docs/winget/full.json",
+    "private": "../docs/winget/private.json",
+    "work": "../docs/winget/work.json",
     "az": "../docs/winget/az.json"
 }
 
