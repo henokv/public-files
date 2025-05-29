@@ -1,6 +1,6 @@
 {
     "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
-    "CreationDate": "2025-05-25T21:33:41.949-00:00",
+    "CreationDate": "2025-05-29T15:40:26.192-00:00",
     "Sources": [
         {
             "Packages": [
@@ -9,6 +9,9 @@
                 },
                 {
                     "PackageIdentifier": "AgileBits.1Password.CLI"
+                },
+                {
+                    "PackageIdentifier": "Atlassian.Sourcetree"
                 },
                 {
                     "PackageIdentifier": "Coder.Coder"
