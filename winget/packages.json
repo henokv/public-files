@@ -1,5 +1,12 @@
 [
     {
+        "package": "7zip.7zip",
+        "inList": [
+            "private",
+            "work"
+        ]
+    },
+    {
         "package": "AgileBits.1Password",
         "inList": [
             "private",
