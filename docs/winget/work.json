@@ -1,9 +1,12 @@
 {
     "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
-    "CreationDate": "2026-02-13T22:36:25.491-00:00",
+    "CreationDate": "2026-02-13T22:38:24.447-00:00",
     "Sources": [
         {
             "Packages": [
+                {
+                    "PackageIdentifier": "7zip.7zip"
+                },
                 {
                     "PackageIdentifier": "AgileBits.1Password"
                 },
