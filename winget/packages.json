@@ -296,5 +296,13 @@
     {
         "package": "calibre.calibre",
         "inList": ["private"]
+    },
+    {
+        "package": "Derailed.k9s",
+        "inList": ["private", "work", "az"]
+    },
+    {
+        "package": "loft-sh.vcluster",
+        "inList": ["private"]
     }
 ]
