@@ -298,6 +298,13 @@
         "inList": ["private"]
     },
     {
+        "package": "7zip.7zip",
+        "inList": [
+            "private",
+            "work"
+        ]
+    },
+    {
         "package": "Derailed.k9s",
         "inList": ["private", "work", "az"]
     },
@@ -305,4 +312,5 @@
         "package": "loft-sh.vcluster",
         "inList": ["private"]
     }
+    
 ]
